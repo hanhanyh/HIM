@@ -1,0 +1,132 @@
+消息格式：
+四字节内容长度头（不包括头）|Json数据内容
+如果无法解析则立即断开。
+无法解析：
+{
+	"type": "error",
+	"data": {
+		"detail": "无法解析数据包"
+	}
+}
+---登录---
+登录：
+{
+    "type": "login",
+    "data": {
+        "name": "admin1",
+        "password": "admin2"
+    }
+}
+登录结果响应
+{
+    "type": "loginresponse",
+    "data": {
+        "result": 1
+    }
+}
+---对好友发送消息---
+发送消息：
+{
+    "type": "p2pmsg",
+    "data": {
+        "sendername": "admin1",
+        "receivername": "admin2",
+        "detail": "详情",
+        "sendtime": "2018-6-1 22:35:56"
+    }
+}
+好友请求（提出）：
+{
+    "type": "p2pfriendrequest",
+    "data": {
+        "sendername": "admin1",
+        "receivername": "admin2",
+        "detail": "详情",
+        "sendtime": "2018-6-1 22:35:56"
+    }
+}
+好友请求 应答：
+{
+    "type": "p2pfriendresponse",
+    "data": {
+        "sendername": "admin1",
+        "receivername": "admin2",
+        "detail": "详情",
+        "result": 1,
+        "sendtime":"2018-6-1 22:37:00"
+    }
+}
+---------群---------------：
+群里发消息：
+{
+    "type": "groupmsg",
+    "data": {
+        "sendername": "admin1",
+        "receivergroupid": 10001,
+        "detail": "详情",
+        "sendtime": "2018-6-1 22:37:00"
+    }
+}
+加群请求：
+{
+    "type": "groupaddrequest",
+    "data": {
+        "sendername": "admin1",
+        "groupid": 10001,
+        "detail": "详情",
+        "sendtime": "2018-6-1 22:37:00"
+    }
+}
+加群请求响应：
+{
+    "type": "groupaddresponse",
+    "data": {
+        "sendername": "admin1",
+		"receivername":"admin2"
+        "groupid": 10001,
+        "detail": "详情",
+        "result": 1,
+        "sendtime": "2018-6-1 22:37:00"
+    }
+}
+---紧急消息---
+自己--
+  被迫下线：
+{
+    "type": "urgenrtunderline",
+    "data": {
+        "receivername": "admin1",
+        "detail": "原因",
+        "sendtime": "2018-6-1 22:37:00"
+    }
+}
+好友：
+删除（或被删除好友）
+{
+    "type": "deletedfriend",
+    "data": {
+        "receivername": "admin1",
+        "deletedname": "admin0",
+        "sendtime": "2018-6-1 22:37:00"
+    }
+}
+群：
+ admin1被admin0剔除群：
+ {
+    "type": "groupdeleted",
+    "data": {
+        "receivername": "admin1",
+        "deletedgroupid": 1000,
+        "processname": "admin0",
+        "sendtime": "2018-6-1 22:37:00"
+    }
+}
+admin1自愿退出群：
+{
+    "type": "groupdeleting",
+    "data": {
+        "receivername": "admin1",
+        "deletedgroupid": 1000,
+        "sendtime": "2018-6-1 22:37:00"
+    }
+}

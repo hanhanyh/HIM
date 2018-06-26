@@ -1,0 +1,27 @@
+﻿生成启动时间为 2018/6/26 18:53:46。
+     1>项目“E:\VSProjects\HIMProjects\HIM\HIMServer\HIMServer\HIMServer.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IE:\boost_1_67_0 /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt HIMServer.cpp
+         HIMServer.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+     1>HIMServer.cpp(100): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+     1>HIMServer.cpp(115): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+     1>HIMServer.cpp(147): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>HIMServer.cpp(149): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\VSProjects\HIMProjects\HIM\HIMServer\x64\Debug\HIMServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\boost\boost_1_67_0\bin\vc12\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\VSProjects\HIMProjects\HIM\HIMServer\x64\Debug\HIMServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\VSProjects\HIMProjects\HIM\HIMServer\x64\Debug\HIMServer.lib" /MACHINE:X64 x64\Debug\cJSON.obj
+         x64\Debug\HIMServer.obj
+         x64\Debug\JsonStringBuilder.obj
+         x64\Debug\JsonStringParser.obj
+         x64\Debug\main.obj
+         x64\Debug\MsgProtocolResolover.obj
+         HIMServer.vcxproj -> E:\VSProjects\HIMProjects\HIM\HIMServer\x64\Debug\HIMServer.exe
+     1>已完成生成项目“E:\VSProjects\HIMProjects\HIM\HIMServer\HIMServer\HIMServer.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.40
