@@ -75,6 +75,9 @@ void HIM::HIMServer::start()
 void HIM::HIMServer::startResolvingLoop(boost::shared_ptr<ip::tcp::socket> sock)
 {
 	char * msgType = 0;//考虑用智能指针
+	//当前登录的用户名
+	char * currentUserName = new char[1024];//考虑使用智能指针
+	memset(currentUserName, '\0', 1024);
 	while (true)
 	{
 		//头部字节数据(留一个\0的位置)
@@ -127,10 +130,34 @@ void HIM::HIMServer::startResolvingLoop(boost::shared_ptr<ip::tcp::socket> sock)
 		}
 		std::cout << "消息类型:" << msgType << endl;
 		//消息分派
-	/*	if (strcmp("login", msgType) == 0) //登录操作
+	 	if (strcmp("login", msgType) == 0) //登录操作
 		{
 
-		}*/
+		}
+		else if (strcmp("p2pmsg", msgType) == 0)//发送消息给好友
+		{
+			
+		}
+		else if (strcmp("p2pfriendrequest", msgType) == 0)//好友请求
+		{
+		
+		}
+		else if (strcmp("p2pfriendresponse", msgType) == 0)//好友请求应答
+		{
+		
+		}
+		else if (strcmp("groupmsg", msgType) == 0)//群消息
+		{
+
+		}
+		else if (strcmp("groupaddrequest", msgType) == 0)//群请求
+		{
+		
+		}
+		else if (strcmp("groupaddresponse", msgType) == 0)//加入
+		{
+
+		}
 		////复位
 		//memset(chead, '\0', 5);
 		//readhead = 0;
@@ -138,7 +165,7 @@ void HIM::HIMServer::startResolvingLoop(boost::shared_ptr<ip::tcp::socket> sock)
 		//break;
 	}
 	delete[] msgType;
-
+	delete[] currentUserName;
 }
 bool HIM::HIMServer::msgType(char * jsonstr, char ** msgtype)
 {
