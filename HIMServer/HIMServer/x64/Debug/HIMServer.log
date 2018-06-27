@@ -1,7 +1,67 @@
-﻿生成启动时间为 2018/6/26 18:53:46。
-     1>项目“E:\VSProjects\HIMProjects\HIM\HIMServer\HIMServer\HIMServer.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2018/6/27 9:20:28。
+     1>项目“E:\VSProjects\HIMProjects\HIM\HIMServer\HIMServer\HIMServer.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IE:\boost_1_67_0 /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt HIMServer.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IE:\boost_1_67_0 /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TC /errorReport:prompt cJSON.c
+         cJSON.c
+     1>cJSON.c(143): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+     1>cJSON.c(155): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>cJSON.c(161): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>cJSON.c(169): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>cJSON.c(170): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>cJSON.c(171): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>cJSON.c(259): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+     1>cJSON.c(264): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>cJSON.c(275): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>cJSON.c(301): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>cJSON.c(380): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>cJSON.c(381): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>cJSON.c(382): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>cJSON.c(449): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>cJSON.c(481): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+     1>cJSON.c(624): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+     1>cJSON.c(647): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IE:\boost_1_67_0 /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt HIMServer.cpp JsonStringBuilder.cpp JsonStringParser.cpp main.cpp MsgProtocolResolover.cpp
+         MsgProtocolResolover.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+     1>MsgProtocolResolover.cpp(30): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+     1>MsgProtocolResolover.cpp(44): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+     1>MsgProtocolResolover.cpp(64): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>MsgProtocolResolover.cpp(66): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+         main.cpp
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+         JsonStringParser.cpp
+     1>JsonStringParser.cpp(9): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>JsonStringParser.cpp(11): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>JsonStringParser.cpp(33): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>JsonStringParser.cpp(34): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>JsonStringParser.cpp(37): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>JsonStringParser.cpp(38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+         JsonStringBuilder.cpp
+     1>JsonStringBuilder.cpp(14): warning C4101: “detail”: 未引用的局部变量
+     1>JsonStringBuilder.cpp(24): warning C4101: “detail”: 未引用的局部变量
          HIMServer.cpp
          Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
          - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
@@ -9,9 +69,10 @@
          Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
      1>HIMServer.cpp(100): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
      1>HIMServer.cpp(115): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
-     1>HIMServer.cpp(147): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-     1>HIMServer.cpp(149): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>HIMServer.cpp(151): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>HIMServer.cpp(153): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+         正在生成代码...
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\VSProjects\HIMProjects\HIM\HIMServer\x64\Debug\HIMServer.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\boost\boost_1_67_0\bin\vc12\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\VSProjects\HIMProjects\HIM\HIMServer\x64\Debug\HIMServer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\VSProjects\HIMProjects\HIM\HIMServer\x64\Debug\HIMServer.lib" /MACHINE:X64 x64\Debug\cJSON.obj
          x64\Debug\HIMServer.obj
@@ -20,8 +81,8 @@
          x64\Debug\main.obj
          x64\Debug\MsgProtocolResolover.obj
          HIMServer.vcxproj -> E:\VSProjects\HIMProjects\HIM\HIMServer\x64\Debug\HIMServer.exe
-     1>已完成生成项目“E:\VSProjects\HIMProjects\HIM\HIMServer\HIMServer\HIMServer.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“E:\VSProjects\HIMProjects\HIM\HIMServer\HIMServer\HIMServer.vcxproj”(Rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:05.40
+已用时间 00:00:19.97

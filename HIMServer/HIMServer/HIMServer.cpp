@@ -74,13 +74,13 @@ void HIM::HIMServer::start()
 
 void HIM::HIMServer::startResolvingLoop(boost::shared_ptr<ip::tcp::socket> sock)
 {
-	char * msgType = 0;
+	char * msgType = 0;//考虑用智能指针
 	while (true)
 	{
 		//头部字节数据(留一个\0的位置)
 		char chead[5];
 		//消息类型
-		msgType=new char[50];
+		msgType = new char[50];
 		memset(msgType, '\0', 50);
 
 		memset(chead, '\0', 5);
@@ -117,7 +117,7 @@ void HIM::HIMServer::startResolvingLoop(boost::shared_ptr<ip::tcp::socket> sock)
 		//把cbody传入JsonStringParser 进行处理
 		std::cout << cbody << endl;
 		std::cout << "---数据成功接收-" << endl;
-		//消息分派
+		//解析消息类型
 		if (this->msgType(cbody, &msgType) == false)
 		{
 			std::cout << "解析消息类型失败！" << endl;
@@ -126,7 +126,11 @@ void HIM::HIMServer::startResolvingLoop(boost::shared_ptr<ip::tcp::socket> sock)
 			break;
 		}
 		std::cout << "消息类型:" << msgType << endl;
-		
+		//消息分派
+	/*	if (strcmp("login", msgType) == 0) //登录操作
+		{
+
+		}*/
 		////复位
 		//memset(chead, '\0', 5);
 		//readhead = 0;
